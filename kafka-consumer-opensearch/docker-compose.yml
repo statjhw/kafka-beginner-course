@@ -4,7 +4,7 @@ services:
     image: opensearchproject/opensearch:1.2.4
     environment:
       discovery.type: single-node
-      plugs.security.disabled: true
+      plugins.security.disabled: true
       compatibility.override_main_response_version: true
     ports :
       - 9200:9200
